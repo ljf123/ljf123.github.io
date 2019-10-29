@@ -1,0 +1,19 @@
+---
+title: "J's website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+## Home Page
+
+Welcome to the home page of J's website! Follow the links below to discover more about J.
+
+
+# Links
+
+* [resume](resume.html)
+* [GitHub account](https://github.com/ljf123)
+* [email](jl5548@cumc.columbia.edu)
