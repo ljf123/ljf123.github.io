@@ -1,0 +1,66 @@
+---
+name: "Resume"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "Resume"
+      href: resume.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<jl5548@cumc.columbia.com>
+    - icon: fa-github fa-lg
+      href: http://github.com/<ljf123>/
+output:
+  html_document:
+    theme: cerulean
+---
+
+### Resume
+
+
+__Educational Background__
+
+* Columbia University—New York, NY: M.S. in Biostatistics, Expected May 2021
+* University of Washington—Seattle, WA (2015-2019):
+B.S. in Psychology, Psychology Honors Program, Minor in Informatics
+Cumulative GPA: 3.71, Dean’s List: 11 quarters, Annual Dean’s List: 2016-2019
+
+__Skills__
+
+*	Software: R, SQL, MATLAB, Python, SAS, Java, SPSS, Microsoft Office, Adobe Audition, Photoshop, E-Prime
+*	Experience of collecting and analyzing EEG & fMRI data
+
+__Research Experience__
+
+Undergraduate Researcher and Project Lead, UW, Seattle (1/2018 – 6/2019)
+
+*	Cognition and Cortical Dynamics Lab (Approach functions of cortical networks in cognition with methods of computational neuroscience)
+*	Research topic: Relating individual differences in foreign music comprehension to Neurocognitive Aspects of Second Language Aptitude
+*	Designed the research procedures and methods of data analysis 
+*	Cleaned and analyzed EEG data using R, Python, and SPSS
+*	Trained undergraduate research assistants for EEG and behavioral data collection
+*	Finished the academic research proposal, oral and poster presentation, and academic research thesis, will focus on revising and submitting to academic journals
+
+Research Assistant, Institute of Neuroscience, China Academy of Science, Shanghai, China (7-9, 2018)
+
+*	Learnt about statistical analysis including bootstrap procedure, normalization, cross-correlation coefficient calculation, permutation test, and jackknife procedure 
+*	Applied TRF (temporal response function) methods and 3-down-1-up procedure to design and adjust stimuli in experiments 
+*	Designed and revised different versions of experiment paradigm and data collection method, combining the TRF approach on alpha channel of EEG with the current research focus of sequential learning
+*	Completed experiment program and analyzed behavioral data with MATLAB (psychtoolbox), learnt to perform 3-down-1-up procedure in MATLAB, and investigated on the use of mTRF toolbox of MATLAB 
+
+Undergraduate Intern, Newbook Digital Humanities Project, UW, Seattle (11/2015 - 06/2016)
+
+__Course Project__
+
+Data visualization—Analysis of MacDonald’s food category, UW, Seattle
+
+*	Visualized data through building R Shiny App 
+
+UX Design of Campus Safety App, UW, Seattle
+
+*	Conducted User Research and designed the App using Figma
+
+__Activities__
+
+* Leader of voluntary team, OP Training Center for Children with ASD, Nanjing, China (7-8.2016)
+* Radio host, HUA voice Chinese radio, UW, Seattle (& Seattle Chinese Radio) 	 (10/2016 – 6/2017)
