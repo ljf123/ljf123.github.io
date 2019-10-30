@@ -1,0 +1,23 @@
+---
+title: "Jiafei Li"
+output: 
+  html_document:
+    theme: cerulean
+---
+first year M.S. student in Biostatistics <br>
+Columbia University Mailman School of Public Health
+
+
+### About
+
+I received a BS in Psychology and minor in Informatics from University of Washington, Seattle, in 2019. I'm currently a first year M.S. student in Biostatistics in Columbia University Mailman School of Public Health, learning to apply statistical methods in medical researches and other health-related fields.  
+
+During my time in University of Washington, Seattle, I designed and conducted several researches in cognitive neuroscience, with a focus in EEG studies in human's language and music learning abilities. With a minor in Informatics, I was also interested in learning statistical methods and completed several course projects including data visualization and UX design of Apps. I was also a radio host.
+
+During the time in Columbia University Mailman School of Public Health, I have been learning about statistical methods and programming skills, and already completed several course projects in Data Science course.
+
+* [resume](resume.html)
+
+### Contact Information
+* [GitHub account](https://github.com/ljf123)
+* [Email](jl5548@cumc.columbia.edu)
