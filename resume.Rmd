@@ -1,15 +1,5 @@
 ---
 name: "Resume"
-output_dir: "."
-navbar:
-  title: "Home"
-  right:
-    - text: "Resume"
-      href: resume.html
-    - icon: fa-envelope fa-lg
-      href: mailto:<jl5548@cumc.columbia.com>
-    - icon: fa-github fa-lg
-      href: http://github.com/<ljf123>/
 output:
   html_document:
     theme: cerulean

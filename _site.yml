@@ -5,7 +5,7 @@ navbar:
   right:
     - text: "About"
       href: about.html
-    - icon: fa-cv fa-lg
+    - text: "CV"
       href: resume.html
     - icon: fa-envelope fa-lg
       href: mailto:<jl5548@cumc.columbia.com>
