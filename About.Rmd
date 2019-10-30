@@ -4,7 +4,7 @@ output:
   html_document:
     theme: cerulean
 ---
-first year M.S. student in Biostatistics
+first year M.S. student in Biostatistics <br>
 Columbia University Mailman School of Public Health
 
 
