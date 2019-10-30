@@ -20,7 +20,6 @@ During my time in University of Washington, Seattle, I designed and conducted se
 During the time in Columbia University Mailman School of Public Health, I have been learning about statistical methods and programming skills, and already completed several course projects in Data Science course.
 
 * [resume](resume.html)
-* [flexdashboard](flexdashboard.html)
 
 ### Contact Information
 * [GitHub account](https://github.com/ljf123)

@@ -1,0 +1,103 @@
+---
+title: "Inspections of NYC restaurants"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(viridis)
+library(plotly)
+library(p8105.datasets)
+
+knitr::opts_chunk$set(
+	echo = TRUE,
+	warning = FALSE,
+	fig.width = 8, 
+  fig.height = 6,
+  out.width = "90%"
+)
+options(
+  ggplot2.continuous.colour = "viridis",
+  ggplot2.continuous.fill = "viridis"
+)
+scale_colour_discrete = scale_colour_viridis_d
+scale_fill_discrete = scale_fill_viridis_d
+theme_set(theme_minimal() + theme(legend.position = "bottom"))
+```
+
+```{r, echo = FALSE}
+## import and clean data
+data("rest_inspec")
+df_restaurant = rest_inspec %>% 
+  janitor::clean_names() 
+```
+
+Column {data-width=550}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r, echo = FALSE}
+## create boxplot showing distribution of restaurant inspection scores in each neighbourhood
+df_restaurant %>%
+  # discard the missing values in boro column
+  filter(!(boro == "Missing")) %>%  
+  group_by(boro) %>% 
+  plot_ly(y = ~score, color = ~boro, type = "box") %>% 
+  layout(
+    title = "Inspection Score in NY Neighbourhoods",
+    xaxis = list(title = "Neighbourhood"),
+    yaxis = list(title = "Score")
+  )
+```
+
+Column {data-width=450}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r, echo = FALSE}
+## create a bar graph showing the number of problems of different critical levels in each neighbourhood
+df_restaurant %>% 
+  # discard the missing values in boro column
+  filter(!(boro == "Missing")) %>% 
+  group_by(boro, critical_flag) %>% 
+  summarize(n = n()) %>% 
+  plot_ly(x = ~boro, y = ~n, color = ~critical_flag, type = "bar") %>% 
+  layout(
+    title = "Inspection Problem Critical Levels in NY Neighbourhoods",
+    xaxis = list(title = "Neighbourhood"),
+    yaxis = list(title = "Count")
+  )
+```
+
+### Chart C
+
+```{r, echo = FALSE}
+## create a stacked bar graph showing the number of pizza restaurants with grade A, B, C in each neighbourhood
+df_restaurant %>% 
+  filter(
+    str_detect(dba, "[Pp][Ii][Zz][Zz][Aa]"),
+    str_detect(grade, c("A", "B", "C")),
+    !(boro == "Missing")
+  ) %>%
+  group_by(boro, grade) %>% 
+  summarize(n = n()) %>% 
+  pivot_wider(
+    names_from = grade,
+    values_from = n
+  ) %>% 
+  plot_ly(x = ~boro,  y = ~A, type = "bar", name = "grade A") %>% 
+  add_trace(y = ~B, name = "grade B") %>%
+  add_trace(y = ~C, name = "grade C") %>% 
+  layout(
+    title = "Inspection Grade of Pizza Restaurants in NY Neighbourhoods",
+    xaxis = list(title = "Neighbourhood"),
+    yaxis = list(title = "Count"), 
+    barmode = "stack"
+  )
+```
