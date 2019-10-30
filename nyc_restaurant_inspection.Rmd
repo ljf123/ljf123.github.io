@@ -1,5 +1,5 @@
 ---
-title: "Inspections of NYC restaurants"
+title: "Inspections of NYC Restaurants"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
